@@ -159,3 +159,29 @@ body {
     height: 180px;
   }
 }
+
+/* Fix text wrapping inside product cards */
+.card,
+.content {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.content h2,
+.content p,
+.description,
+.price {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.description {
+  min-width: 0;
+  width: 100%;
+}
+
+.image {
+  flex-shrink: 0;
+}
